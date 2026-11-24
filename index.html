@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183D2F">
+  <meta name="description" content="MONU adalah platform monitoring hutan berbasis IoT untuk pemantauan lingkungan dan peringatan dini potensi kebakaran.">
+  <title>MONU — Monitoring Hutan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a class="brand" href="#beranda" aria-label="MONU Beranda">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 44 44"><path d="M22 38V20M22 20C14 20 9 15 8 8c8-1 14 3 14 12Zm0 8c8 0 13-5 14-12-8-1-14 3-14 12Z"/><path d="M22 30C16 29 13 25 12 20"/></svg>
+        </span>
+        <span class="brand-copy"><strong>MONU</strong><small>Monitoring Hutan</small></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#beranda" class="nav-link active">Beranda</a>
+        <a href="#tentang" class="nav-link">Tentang</a>
+        <a href="#fitur" class="nav-link">Fitur</a>
+        <a href="#peta-risiko" class="nav-link">Peta Risiko</a>
+      </div>
+      <a class="nav-cta" href="#download">Download App</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="beranda">
+      <div class="hero-decoration hero-decoration-one"></div>
+      <div class="hero-decoration hero-decoration-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Smart Forest Monitoring System</p>
+          <h1>JAGA HUTAN.<br><em>PANTAU DARI</em><br>MANA SAJA.</h1>
+          <p class="hero-description">Kenali kondisi hutan lebih dekat melalui teknologi monitoring IoT. Pantau data sensor, identifikasi indikasi risiko kebakaran, dan dapatkan informasi lingkungan dalam satu aplikasi.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#download">Download Aplikasi
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v10m0 0 4-4m-4 4L6 9M4 17h12"/></svg>
+            </a>
+            <a class="button button-secondary" href="#fitur">Pelajari Fitur</a>
+          </div>
+          <p class="hero-meta">Android Application <i></i> IoT Integrated <i></i> Forest Monitoring</p>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Visual aplikasi monitoring MONU">
+          <div class="forest-orb">
+            <img src="assets/images/forest-detail.jpg" alt="Pemandangan hutan tropis">
+          </div>
+          <div class="phone">
+            <div class="phone-speaker"></div>
+            <div class="phone-screen">
+              <div class="app-header">
+                <div>
+                  <small>Lokasi Monitoring</small>
+                  <strong>Hutan Jatirogo</strong>
+                </div>
+                <span class="app-avatar">M</span>
+              </div>
+              <div class="status-card">
+                <div class="status-head"><span>RINGKASAN HARI INI</span><span class="status-live">Live</span></div>
+                <div class="status-risk">
+                  <div class="risk-ring"><strong>24°</strong><small>Suhu</small></div>
+                  <div class="risk-copy"><span>Kondisi Aman</span><strong>Monitoring Aktif</strong></div>
+                </div>
+              </div>
+              <div class="sensor-grid">
+                <article><svg viewBox="0 0 24 24"><path d="M12 3v14m0 0a4 4 0 1 0 4-4H8a4 4 0 1 0 4 4Z"/></svg><small>Kelembapan</small><strong>68%</strong></article>
+                <article><svg viewBox="0 0 24 24"><path d="M12 3c4 5 6 8 6 11a6 6 0 1 1-12 0c0-3 2-6 6-11Z"/></svg><small>Tanah</small><strong>42%</strong></article>
+                <article><svg viewBox="0 0 24 24"><path d="M3 12h3l2-5 4 10 3-7 2 2h4"/></svg><small>Kadar Gas</small><strong>120</strong></article>
+              </div>
+              <div class="mini-map">
+                <span class="map-road road-a"></span><span class="map-road road-b"></span>
+                <span class="map-marker marker-a"></span><span class="map-marker marker-b"></span><span class="map-marker marker-c"></span>
+                <div class="map-label"><span></span> 3 perangkat aktif</div>
+              </div>
+            </div>
+          </div>
+          <div class="float-card float-card-status">
+            <span class="float-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.8 2.9 8 7 10 4.1-2 7-5.2 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+            </span>
+            <div><strong>Monitoring Aktif</strong><small>Semua sistem normal</small></div>
+          </div>
+          <div class="float-card float-card-device">
+            <span class="pulse-dot"></span>
+            <div><strong>ESP32 Terhubung</strong><small>Sinkron baru saja</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="tentang">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <div class="about-image-wrap">
+            <img src="assets/images/forest-about.jpg" alt="Pemandangan hutan Indonesia yang hijau">
+          </div>
+          <div class="about-stat"><strong>24/7</strong><span>Pemantauan lingkungan</span></div>
+        </div>
+        <div class="about-copy reveal">
+          <p class="section-eyebrow">About MONU</p>
+          <h2>Teknologi untuk Hutan yang Lebih Terjaga.</h2>
+          <p>MONU hadir untuk mendukung pemantauan lingkungan hutan melalui integrasi teknologi Internet of Things. Dengan sistem pengumpulan data otomatis, informasi kondisi lingkungan dapat diakses lebih mudah melalui perangkat digital.</p>
+          <div class="about-highlights">
+            <div><span>01</span><strong>Real-Time Monitoring</strong></div>
+            <div><span>02</span><strong>Early Warning System</strong></div>
+            <div><span>03</span><strong>Environmental Awareness</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features section" id="fitur">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="section-eyebrow">MONU Features</p>
+          <h2>Everything You Need to Monitor the Forest.</h2>
+          <p>Berbagai fitur terintegrasi untuk membantu pemantauan kondisi hutan.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 21V10m0 0C8 10 5 8 5 4c4 0 7 2 7 6Zm0 4c4 0 7-2 7-6-4 0-7 2-7 6Z"/></svg></span>
+            <h3>Forest Monitoring</h3><p>Pemantauan parameter lingkungan seperti suhu, kelembapan udara, kadar gas, dan kelembapan tanah melalui sensor IoT.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon"><svg viewBox="0 0 24 24"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Z"/><circle cx="12" cy="11" r="2"/></svg></span>
+            <h3>Risk Map</h3><p>Visualisasi lokasi perangkat dan informasi tingkat risiko lingkungan pada area pemantauan.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4"/></svg></span>
+            <h3>Early Warning</h3><p>Sistem peringatan ketika parameter sensor menunjukkan kondisi yang melewati batas aman.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M17.5 14v7m-3.5-3.5h7"/></svg></span>
+            <h3>IoT Device Control</h3><p>Pemantauan status perangkat dan kendali aktuator melalui aplikasi.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon"><svg viewBox="0 0 24 24"><path d="M4 20V10m5 10V4m5 16v-7m5 7V7"/><path d="M2 20h20"/></svg></span>
+            <h3>Environmental Report</h3><p>Penyajian riwayat data monitoring dan laporan kondisi lingkungan.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon"><svg viewBox="0 0 24 24"><path d="M12 21c-4-3-7-7-7-12a7 7 0 0 1 14 0c0 5-3 9-7 12Z"/><path d="M9 10c1.5 0 3 1.5 3 3 0-3 1-5 3-6"/></svg></span>
+            <h3>Forest Education</h3><p>Informasi edukatif mengenai ekosistem, flora, fauna, dan pencegahan kebakaran hutan.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section" id="cara-kerja">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-eyebrow">Monitoring Flow</p>
+          <h2>How MONU Works</h2>
+        </div>
+        <div class="process-track">
+          <article class="process-step reveal"><span class="step-number">01</span><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M12 2v20M8 6h8M8 18h8M9 10h6v4H9z"/></svg></div><h3>Sensor Detection</h3><p>Sensor membaca kondisi lingkungan hutan.</p></article>
+          <article class="process-step reveal"><span class="step-number">02</span><div class="step-icon"><svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4m6-4v4M9 18v4m6-4v4M2 9h4m-4 6h4m12-6h4m-4 6h4"/></svg></div><h3>Data Collection</h3><p>ESP32 mengumpulkan dan memproses data sensor.</p></article>
+          <article class="process-step reveal"><span class="step-number">03</span><div class="step-icon"><svg viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 0-8 6 6 0 0 0-11-2A5 5 0 0 0 7 18Z"/><path d="M12 10v6m-3-3 3 3 3-3"/></svg></div><h3>Cloud Integration</h3><p>Data dikirim menuju database cloud melalui jaringan.</p></article>
+          <article class="process-step reveal"><span class="step-number">04</span><div class="step-icon"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M9 5h6M12 18h.01"/></svg></div><h3>Monitoring & Alert</h3><p>Pengguna melihat data dan menerima peringatan.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="risk section" id="peta-risiko">
+      <div class="container risk-grid">
+        <div class="risk-copy reveal">
+          <p class="section-eyebrow">Risk Intelligence</p>
+          <h2>Understand the Forest. Identify the Risk.</h2>
+          <p>Informasi kondisi lingkungan membantu meningkatkan kewaspadaan terhadap perubahan parameter yang berpotensi membahayakan kawasan hutan.</p>
+          <div class="risk-status"><span class="pulse-dot"></span><div><small>Status Monitoring</small><strong>Area demonstrasi aktif</strong></div></div>
+        </div>
+        <div class="map-panel reveal" aria-label="Ilustrasi peta risiko statis">
+          <div class="map-toolbar"><span><i></i> MONU Risk Map</span><strong>Demo Area</strong></div>
+          <div class="map-canvas">
+            <svg class="terrain-lines" viewBox="0 0 700 420" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M-20 345C90 280 120 400 220 320s180-25 260-90 150-20 240-110"/>
+              <path d="M-30 280C80 220 130 325 220 250s160-20 250-90 160-15 270-90"/>
+              <path d="M-10 190C100 130 160 220 260 160s170-20 250-85 140-20 220-70"/>
+              <path d="M40 430c30-90 120-150 190-130s110-70 180-130"/>
+            </svg>
+            <span class="map-zone zone-low"></span><span class="map-zone zone-medium"></span><span class="map-zone zone-high"></span>
+            <div class="device-marker marker-green" style="left:23%;top:61%"><span>MON-01</span></div>
+            <div class="device-marker marker-yellow" style="left:56%;top:38%"><span>MON-02</span></div>
+            <div class="device-marker marker-red" style="left:75%;top:68%"><span>MON-03</span></div>
+            <div class="map-legend"><strong>Tingkat Risiko</strong><span><i class="low"></i> Rendah</span><span><i class="medium"></i> Sedang</span><span><i class="high"></i> Tinggi</span></div>
+          </div>
+          <p class="map-disclaimer">Peta dan perangkat merupakan ilustrasi demonstrasi, bukan data lokasi aktual.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="download section" id="download">
+      <div class="container download-card reveal">
+        <div class="download-copy">
+          <p class="section-eyebrow light">MONU Mobile App</p>
+          <h2>Bring MONU Wherever You Go.</h2>
+          <p>Mulai pantau kondisi lingkungan hutan melalui satu aplikasi yang praktis dan terintegrasi.</p>
+          <a class="button download-button" href="#download" aria-label="Download aplikasi Android">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5 2 16m14-11 6 11M5 16h14M7 20h10"/><circle cx="8" cy="10" r="1"/><circle cx="16" cy="10" r="1"/></svg>
+            <span><small>Download for</small><strong>Android</strong></span>
+          </a>
+          <div class="app-meta"><span>Versi 1.0.0</span><i></i><span>Ukuran ~25 MB</span></div>
+        </div>
+        <div class="download-phone" aria-label="Mockup aplikasi MONU">
+          <div class="download-screen">
+            <div class="download-app-head"><span class="leaf-mini"></span><strong>MONU</strong><span class="bell">•</span></div>
+            <small>Selamat pagi,</small><strong class="download-greeting">MONITORING HUTAN</strong>
+            <div class="download-condition"><span>KEADAAN AREA</span><strong>Aman</strong><div class="condition-bar"><i></i></div></div>
+            <div class="download-data"><div><small>Suhu</small><strong>24°C</strong></div><div><small>Gas</small><strong>120</strong></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-light" href="#beranda">
+          <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 44"><path d="M22 38V20M22 20C14 20 9 15 8 8c8-1 14 3 14 12Zm0 8c8 0 13-5 14-12-8-1-14 3-14 12Z"/><path d="M22 30C16 29 13 25 12 20"/></svg></span>
+          <span class="brand-copy"><strong>MONU</strong><small>Monitoring Hutan</small></span>
+        </a>
+        <p>Platform monitoring hutan berbasis IoT untuk lingkungan yang lebih terjaga.</p>
+      </div>
+      <div class="footer-links"><strong>Navigation</strong><a href="#tentang">Tentang</a><a href="#fitur">Fitur</a><a href="#peta-risiko">Peta Risiko</a></div>
+      <div class="footer-links"><strong>Contact</strong><a href="mailto:hello@monu.id">hello@monu.id</a><a href="#download">Instagram</a><a href="#download">LinkedIn</a></div>
+      <div class="footer-tagline"><span>Monitor Today,</span><strong>Protect Tomorrow.</strong></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 MONU. All rights reserved.</span><a href="#top">Back to top ↑</a></div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Kembali ke atas">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
