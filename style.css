@@ -29,8 +29,7 @@ button, input { font: inherit; }
 .navbar { height: 76px; display: grid; grid-template-columns: 210px 1fr 140px; align-items: center; gap: 24px; background: rgba(247,247,242,.94); border: 1px solid rgba(48,72,56,.08); border-radius: 999px; padding: 8px 10px 8px 18px; box-shadow: 0 12px 40px rgba(24,61,47,.08); backdrop-filter: blur(16px); }
 .site-header.scrolled { top: 10px; }
 .brand { display: inline-flex; align-items: center; gap: 9px; color: var(--deep); }
-.brand-mark { width: 42px; height: 42px; display: grid; place-items: center; background: var(--deep); border-radius: 50%; }
-.brand-mark svg { width: 31px; fill: none; stroke: var(--light-sage); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.brand-mark { width: 42px; height: 42px; display: block; object-fit: contain; }
 .brand-copy { display: flex; flex-direction: column; line-height: 1; }
 .brand-copy strong { font: 800 20px/1 var(--heading); letter-spacing: .06em; }
 .brand-copy small { margin-top: 5px; font-size: 9px; color: var(--text); letter-spacing: .05em; }
@@ -163,13 +162,13 @@ button, input { font: inherit; }
 .app-meta { display:flex;align-items:center;gap:10px;margin-top:16px;color:#AEBBAF;font-size:10px; }.app-meta i{width:3px;height:3px;border-radius:50%;background:#8FA48F}
 .download-phone { align-self:end;height:470px;width:280px;justify-self:center;border:8px solid #2A4938;border-bottom:0;border-radius:38px 38px 0 0;background:#2A4938;padding:0;box-shadow:0 -15px 45px rgba(0,0,0,.14); }
 .download-screen { height:100%;border-radius:29px 29px 0 0;background:#F7F8F3;color:var(--deep);padding:38px 17px 0; }
-.download-app-head { display:flex;align-items:center;margin-bottom:26px; }.leaf-mini{width:24px;height:24px;margin-right:7px;border-radius:50%;background:var(--deep);}.download-app-head strong{font-size:10px}.bell{margin-left:auto;width:24px;height:24px;display:grid;place-items:center;border-radius:50%;background:white}.download-screen>small{display:block;color:#929C94}.download-greeting{display:block;font-size:13px;margin-top:3px}
+.download-app-head { display:flex;align-items:center;margin-bottom:26px; }.leaf-mini{width:24px;height:24px;margin-right:7px;object-fit:contain;}.download-app-head strong{font-size:10px}.bell{margin-left:auto;width:24px;height:24px;display:grid;place-items:center;border-radius:50%;background:white}.download-screen>small{display:block;color:#929C94}.download-greeting{display:block;font-size:13px;margin-top:3px}
 .download-condition { margin-top:20px;padding:18px;border-radius:16px;background:var(--deep);color:white }.download-condition span{display:block;font-size:8px;opacity:.7}.download-condition strong{display:block;margin:4px 0 12px;font-size:22px}.condition-bar{height:6px;border-radius:6px;background:rgba(255,255,255,.15)}.condition-bar i{display:block;width:72%;height:100%;border-radius:6px;background:#B9CBA7}
 .download-data { display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px }.download-data div{height:85px;padding:14px;border-radius:12px;background:white}.download-data small{display:block;color:#929C94;font-size:8px}.download-data strong{font-size:18px}
 
 .footer { background:#102D23;color:#BAC7BB;padding:70px 0 24px; }
 .footer-grid { display:grid;grid-template-columns:2fr 1fr 1fr 1.4fr;gap:40px; }
-.brand-light { color:white }.brand-light .brand-mark{background:#E8EBDD}.brand-light .brand-mark svg{stroke:var(--deep)}.brand-light .brand-copy small{color:#AEBBAD}
+.brand-light { color:white }.brand-light .brand-copy small{color:#AEBBAD}
 .footer-brand p { max-width:260px;margin:18px 0 0;font-size:13px;color:#9CAAA0; }
 .footer-links { display:flex;flex-direction:column;gap:8px;font-size:12px; }.footer-links strong{margin-bottom:8px;color:white;font-size:12px}.footer-links a:hover{color:white}
 .footer-tagline { display:flex;flex-direction:column;align-items:flex-end;justify-content:center;color:#AFC0AF;font:700 24px/1.2 var(--heading);text-align:right}.footer-tagline strong{color:white}
